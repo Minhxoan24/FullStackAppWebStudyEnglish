@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CleanDemo.Domain/1.0.0": {
+        "runtime": {
+          "CleanDemo.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CleanDemo.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

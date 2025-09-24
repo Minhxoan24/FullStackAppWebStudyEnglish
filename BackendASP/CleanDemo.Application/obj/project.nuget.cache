@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zr9cTetzOUk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Application\\CleanDemo.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Minh\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Minh\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

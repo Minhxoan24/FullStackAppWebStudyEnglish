@@ -1,0 +1,16 @@
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Application\bin\Debug\net8.0\CleanDemo.Application.deps.json
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Application\bin\Debug\net8.0\CleanDemo.Application.dll
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Application\bin\Debug\net8.0\CleanDemo.Application.pdb
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Application\bin\Debug\net8.0\CleanDemo.Domain.dll
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Application\bin\Debug\net8.0\CleanDemo.Domain.pdb
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Application\obj\Debug\net8.0\CleanDemo.Application.csproj.AssemblyReference.cache
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Application\obj\Debug\net8.0\CleanDemo.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Application\obj\Debug\net8.0\CleanDemo.Application.AssemblyInfoInputs.cache
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Application\obj\Debug\net8.0\CleanDemo.Application.AssemblyInfo.cs
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Application\obj\Debug\net8.0\CleanDemo.Application.csproj.CoreCompileInputs.cache
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Application\obj\Debug\net8.0\CleanDemo.Application.sourcelink.json
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Application\obj\Debug\net8.0\CleanDem.A6FA05BD.Up2Date
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Application\obj\Debug\net8.0\CleanDemo.Application.dll
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Application\obj\Debug\net8.0\refint\CleanDemo.Application.dll
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Application\obj\Debug\net8.0\CleanDemo.Application.pdb
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Application\obj\Debug\net8.0\ref\CleanDemo.Application.dll
