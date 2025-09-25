@@ -44,7 +44,7 @@ namespace CleanDemo.Infrastructure.Data.Migrations
 
                     b.HasIndex("QuestionId");
 
-                    b.ToTable("Answers");
+                    b.ToTable("Answers", (string)null);
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.AuditLog", b =>
@@ -67,7 +67,7 @@ namespace CleanDemo.Infrastructure.Data.Migrations
 
                     b.HasKey("AuditLogId");
 
-                    b.ToTable("AuditLogs");
+                    b.ToTable("AuditLogs", (string)null);
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.Course", b =>
@@ -101,7 +101,7 @@ namespace CleanDemo.Infrastructure.Data.Migrations
 
                     b.HasKey("CourseId");
 
-                    b.ToTable("Courses");
+                    b.ToTable("Courses", (string)null);
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.Enrollment", b =>
@@ -130,7 +130,7 @@ namespace CleanDemo.Infrastructure.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Enrollments");
+                    b.ToTable("Enrollments", (string)null);
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.ExampleVocabulary", b =>
@@ -152,7 +152,7 @@ namespace CleanDemo.Infrastructure.Data.Migrations
 
                     b.HasIndex("VocabId");
 
-                    b.ToTable("ExampleVocabulary");
+                    b.ToTable("ExampleVocabularies", (string)null);
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.Lesson", b =>
@@ -178,7 +178,7 @@ namespace CleanDemo.Infrastructure.Data.Migrations
 
                     b.HasIndex("CourseId");
 
-                    b.ToTable("Lessons");
+                    b.ToTable("Lessons", (string)null);
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.Question", b =>
@@ -200,7 +200,7 @@ namespace CleanDemo.Infrastructure.Data.Migrations
 
                     b.HasIndex("QuizId");
 
-                    b.ToTable("Questions");
+                    b.ToTable("Questions", (string)null);
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.Quiz", b =>
@@ -222,7 +222,7 @@ namespace CleanDemo.Infrastructure.Data.Migrations
 
                     b.HasIndex("LessonId");
 
-                    b.ToTable("Quizzes");
+                    b.ToTable("Quizzes", (string)null);
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.Role", b =>
@@ -239,28 +239,19 @@ namespace CleanDemo.Infrastructure.Data.Migrations
 
                     b.HasKey("RoleId");
 
-                    b.ToTable("Role");
-                });
+                    b.ToTable("Roles", (string)null);
 
-            modelBuilder.Entity("CleanDemo.Domain.Domain.StateUser", b =>
-                {
-                    b.Property<int>("StateUserId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StateUserId"));
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("StateUserId");
-
-                    b.ToTable("StateUser");
+                    b.HasData(
+                        new
+                        {
+                            RoleId = 1,
+                            Name = "Admin"
+                        },
+                        new
+                        {
+                            RoleId = 2,
+                            Name = "User"
+                        });
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.Topic", b =>
@@ -287,7 +278,7 @@ namespace CleanDemo.Infrastructure.Data.Migrations
 
                     b.HasKey("TopicId");
 
-                    b.ToTable("Topic");
+                    b.ToTable("Topics", (string)null);
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.User", b =>
@@ -301,35 +292,52 @@ namespace CleanDemo.Infrastructure.Data.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DateOfBirth")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("IDState")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
+                    b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("StateUserId")
-                        .HasColumnType("int");
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
+
+                    b.Property<string>("SureName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.HasKey("UserId");
 
-                    b.HasIndex("StateUserId")
+                    b.HasIndex("Email")
                         .IsUnique();
 
-                    b.ToTable("User");
+                    b.ToTable("Users", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            CreatedAt = new DateTime(2025, 9, 24, 12, 54, 48, 837, DateTimeKind.Utc).AddTicks(8820),
+                            Email = "admin@studyenglish.com",
+                            LastName = "System",
+                            PasswordHash = "$2a$11$example.hash.for.admin",
+                            PhoneNumber = "1234567890",
+                            Status = 0,
+                            SureName = "Admin",
+                            UpdatedAt = new DateTime(2025, 9, 24, 12, 54, 48, 837, DateTimeKind.Utc).AddTicks(8820)
+                        });
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.UserProgress", b =>
@@ -361,7 +369,7 @@ namespace CleanDemo.Infrastructure.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserProgresses");
+                    b.ToTable("UserProgresses", (string)null);
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.UserVocab", b =>
@@ -390,7 +398,7 @@ namespace CleanDemo.Infrastructure.Data.Migrations
 
                     b.HasIndex("VocabId");
 
-                    b.ToTable("UserVocabs");
+                    b.ToTable("UserVocabs", (string)null);
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.Vocab", b =>
@@ -454,7 +462,7 @@ namespace CleanDemo.Infrastructure.Data.Migrations
 
                     b.HasIndex("TopicId");
 
-                    b.ToTable("Vocab");
+                    b.ToTable("Vocabs", (string)null);
                 });
 
             modelBuilder.Entity("RoleUser", b =>
@@ -469,7 +477,14 @@ namespace CleanDemo.Infrastructure.Data.Migrations
 
                     b.HasIndex("UsersUserId");
 
-                    b.ToTable("RoleUser");
+                    b.ToTable("UserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            RolesRoleId = 1,
+                            UsersUserId = 1
+                        });
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.Answer", b =>
@@ -544,17 +559,6 @@ namespace CleanDemo.Infrastructure.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Lesson");
-                });
-
-            modelBuilder.Entity("CleanDemo.Domain.Domain.User", b =>
-                {
-                    b.HasOne("CleanDemo.Domain.Domain.StateUser", "State")
-                        .WithOne("User")
-                        .HasForeignKey("CleanDemo.Domain.Domain.User", "StateUserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("State");
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.UserProgress", b =>
@@ -634,12 +638,6 @@ namespace CleanDemo.Infrastructure.Data.Migrations
             modelBuilder.Entity("CleanDemo.Domain.Domain.Quiz", b =>
                 {
                     b.Navigation("Questions");
-                });
-
-            modelBuilder.Entity("CleanDemo.Domain.Domain.StateUser", b =>
-                {
-                    b.Navigation("User")
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.Topic", b =>

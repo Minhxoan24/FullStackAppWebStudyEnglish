@@ -10,13 +10,11 @@ namespace CleanDemo.Application.Service
     public class CourseService : ICourseService
     {
         private readonly ICourseRepository _courseRepository;
-        private readonly ICourseValidator _validator;
         private readonly IMapper _mapper;
 
-        public CourseService(ICourseRepository courseRepository, ICourseValidator validator, IMapper mapper)
+        public CourseService(ICourseRepository courseRepository, IMapper mapper)
         {
             _courseRepository = courseRepository;
-            _validator = validator;
             _mapper = mapper;
         }
 
@@ -64,8 +62,6 @@ namespace CleanDemo.Application.Service
             var response = new ServiceResponse<CourseDto>();
             try
             {
-                _validator.ValidateCreateCourse(createCourseDto);
-
                 var course = _mapper.Map<Course>(createCourseDto);
 
                 await _courseRepository.AddCourseAsync(course);
@@ -86,7 +82,6 @@ namespace CleanDemo.Application.Service
             var response = new ServiceResponse<CourseDto>();
             try
             {
-                _validator.ValidateUpdateCourse(updateCourseDto);
                 if (id <= 0) throw new ArgumentException("Course ID must be greater than 0");
 
                 var existingCourse = await _courseRepository.GetCourseByIdAsync(id);

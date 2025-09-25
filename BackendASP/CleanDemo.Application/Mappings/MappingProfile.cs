@@ -19,6 +19,13 @@ namespace CleanDemo.Application.Mappings
             CreateMap<CreateCourseDto, Course>();
             CreateMap<UpdateCourseDto, Course>()
                 .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+
+            // User mappings
+            CreateMap<User, UserDto>()
+                .ForMember(dest => dest.Status, opt => opt.MapFrom(src => src.Status.ToString()));
+            CreateMap<RegisterUserDto, User>();
+            CreateMap<UpdateUserDto, User>()
+                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
         }
     }
 }

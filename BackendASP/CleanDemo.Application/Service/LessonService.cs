@@ -11,14 +11,12 @@ namespace CleanDemo.Application.Service
     {
         private readonly ILessonRepository _lessonRepository;
         private readonly ICourseRepository _courseRepository;
-        private readonly ILessonValidator _validator;
         private readonly IMapper _mapper;
 
-        public LessonService(ILessonRepository lessonRepository, ICourseRepository courseRepository, ILessonValidator validator, IMapper mapper)
+        public LessonService(ILessonRepository lessonRepository, ICourseRepository courseRepository, IMapper mapper)
         {
             _lessonRepository = lessonRepository;
             _courseRepository = courseRepository;
-            _validator = validator;
             _mapper = mapper;
         }
 
@@ -66,8 +64,6 @@ namespace CleanDemo.Application.Service
             var response = new ServiceResponse<LessonDto>();
             try
             {
-                _validator.ValidateCreateLesson(createLessonDto);
-
                 var course = await _courseRepository.GetCourseByIdAsync(createLessonDto.CourseId);
                 if (course == null)
                 {
@@ -95,8 +91,6 @@ namespace CleanDemo.Application.Service
             var response = new ServiceResponse<LessonDto>();
             try
             {
-                _validator.ValidateUpdateLesson(updateLessonDto);
-                
                 var existingLesson = await _lessonRepository.GetLessonByIdAsync(id);
                 if (existingLesson == null)
                 {

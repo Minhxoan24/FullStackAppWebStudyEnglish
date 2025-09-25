@@ -150,3 +150,8 @@ C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\Ba
 C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.API\obj\Debug\net8.0\CleanDemo.API.pdb
 C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.API\obj\Debug\net8.0\CleanDemo.API.genruntimeconfig.cache
 C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.API\obj\Debug\net8.0\ref\CleanDemo.API.dll
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.API\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

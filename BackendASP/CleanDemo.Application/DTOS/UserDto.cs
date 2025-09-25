@@ -1,37 +1,62 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace CleanDemo.Application.DTOS
+namespace CleanDemo.Application.DTOs
 {
-    public class CreateUserDto
+    public class RegisterUserDto
     {
-        public string SureName { get; set; }
-        public string LastName { get; set; }
-        public string Email { get; set; }
-        private string PassWord { get; set; }
-        private string ConfirmPassword { get; set; }
-        private string PhoneNumber { get; set; }
+        [Required]
+        public string SureName { get; set; } = string.Empty;
+        [Required]
+        public string LastName { get; set; } = string.Empty;
+        [Required, EmailAddress]
+        public string Email { get; set; } = string.Empty;
+        [Required, MinLength(6)]
+        public string Password { get; set; } = string.Empty;
+        [Required]
+        public string PhoneNumber { get; set; } = string.Empty;
     }
-    public class UpdateUserDto
+
+    public class LoginUserDto
     {
-        public string? SureName { get; set; }
-        public string? LastName { get; set; }
-
-        private string? PassWord { get; set; }
-        private string? ConfirmPassword { get; set; }
-
-
+        [Required, EmailAddress]
+        public string Email { get; set; } = string.Empty;
+        [Required]
+        public string Password { get; set; } = string.Empty;
     }
+
     public class UserDto
     {
         public int UserId { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
-
+        public string Name { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string PhoneNumber { get; set; } = string.Empty;
+        public string Status { get; set; } = string.Empty;
     }
-    public class DeleteUserDto
+
+    public class AuthResponseDto
     {
-        public int UserId { get; set; }
+        public string Token { get; set; } = string.Empty;
+        public UserDto User { get; set; } = new();
+    }
+
+    public class UpdateUserDto
+    {
+        public string SureName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
+        public string PhoneNumber { get; set; } = string.Empty;
+    }
+
+    public class ChangePasswordDto
+    {
+        [Required]
+        public string CurrentPassword { get; set; } = string.Empty;
+        [Required, MinLength(6)]
+        public string NewPassword { get; set; } = string.Empty;
+    }
+
+    public class ForgotPasswordDto
+    {
+        [Required, EmailAddress]
+        public string Email { get; set; } = string.Empty;
     }
 }
