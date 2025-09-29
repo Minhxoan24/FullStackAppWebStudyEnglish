@@ -35,7 +35,8 @@ namespace CleanDemo.Application.DTOs
 
     public class AuthResponseDto
     {
-        public string Token { get; set; } = string.Empty;
+        public string AccessToken { get; set; } = string.Empty;
+        public string RefreshToken { get; set; } = string.Empty;
         public UserDto User { get; set; } = new();
     }
 
@@ -58,5 +59,17 @@ namespace CleanDemo.Application.DTOs
     {
         [Required, EmailAddress]
         public string Email { get; set; } = string.Empty;
+    }
+
+    public class RefreshTokenDto
+    {
+        [Required]
+        public string RefreshToken { get; set; } = string.Empty;
+    }
+
+    public class UpdateUserRoleDto
+    {
+        [Required]
+        public string RoleName { get; set; } = string.Empty;
     }
 }

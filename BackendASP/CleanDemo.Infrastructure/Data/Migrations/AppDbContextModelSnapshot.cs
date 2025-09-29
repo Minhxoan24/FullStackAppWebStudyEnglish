@@ -225,6 +225,37 @@ namespace CleanDemo.Infrastructure.Data.Migrations
                     b.ToTable("Quizzes", (string)null);
                 });
 
+            modelBuilder.Entity("CleanDemo.Domain.Domain.RefreshToken", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ExpiresAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsRevoked")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Token")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("RefreshTokens", (string)null);
+                });
+
             modelBuilder.Entity("CleanDemo.Domain.Domain.Role", b =>
                 {
                     b.Property<int>("RoleId")
@@ -329,14 +360,14 @@ namespace CleanDemo.Infrastructure.Data.Migrations
                         new
                         {
                             UserId = 1,
-                            CreatedAt = new DateTime(2025, 9, 24, 12, 54, 48, 837, DateTimeKind.Utc).AddTicks(8820),
+                            CreatedAt = new DateTime(2025, 9, 29, 17, 56, 55, 63, DateTimeKind.Utc).AddTicks(3522),
                             Email = "admin@studyenglish.com",
                             LastName = "System",
                             PasswordHash = "$2a$11$example.hash.for.admin",
                             PhoneNumber = "1234567890",
                             Status = 0,
                             SureName = "Admin",
-                            UpdatedAt = new DateTime(2025, 9, 24, 12, 54, 48, 837, DateTimeKind.Utc).AddTicks(8820)
+                            UpdatedAt = new DateTime(2025, 9, 29, 17, 56, 55, 63, DateTimeKind.Utc).AddTicks(3522)
                         });
                 });
 
@@ -559,6 +590,17 @@ namespace CleanDemo.Infrastructure.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Lesson");
+                });
+
+            modelBuilder.Entity("CleanDemo.Domain.Domain.RefreshToken", b =>
+                {
+                    b.HasOne("CleanDemo.Domain.Domain.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.UserProgress", b =>

@@ -22,6 +22,7 @@ namespace CleanDemo.Infrastructure.Data
         public DbSet<Vocab> Vocabs { get; set; }
         public DbSet<Topic> Topics { get; set; }
         public DbSet<ExampleVocabulary> ExampleVocabularies { get; set; }
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -125,6 +126,12 @@ namespace CleanDemo.Infrastructure.Data
                 .HasMany(u => u.Roles)
                 .WithMany(r => r.Users)
                 .UsingEntity(j => j.ToTable("UserRoles"));
+
+            modelBuilder.Entity<RefreshToken>()
+                .ToTable("RefreshTokens")
+                .HasOne(rt => rt.User)
+                .WithMany()
+                .HasForeignKey(rt => rt.UserId);
 
             // Seed data
             modelBuilder.Entity<Role>().HasData(
