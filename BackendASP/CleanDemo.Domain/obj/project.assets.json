@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Domain\\CleanDemo.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Minh\\Desktop\\Projcet\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Domain\\CleanDemo.Domain.csproj",
       "projectName": "CleanDemo.Domain",
-      "projectPath": "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Domain\\CleanDemo.Domain.csproj",
+      "projectPath": "C:\\Users\\Minh\\Desktop\\Projcet\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Domain\\CleanDemo.Domain.csproj",
       "packagesPath": "C:\\Users\\Minh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Minh\\Desktop\\Projcet\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Minh\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "647P5RC99VY=",
+  "dgSpecHash": "ZCdvzCrZKMA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.API\\CleanDemo.API.csproj",
+  "projectFilePath": "C:\\Users\\Minh\\Desktop\\Projcet\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.API\\CleanDemo.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Minh\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Minh\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

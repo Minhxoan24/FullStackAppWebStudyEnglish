@@ -642,11 +642,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Application\\CleanDemo.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Minh\\Desktop\\Projcet\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Application\\CleanDemo.Application.csproj",
       "projectName": "CleanDemo.Application",
-      "projectPath": "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Application\\CleanDemo.Application.csproj",
+      "projectPath": "C:\\Users\\Minh\\Desktop\\Projcet\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Application\\CleanDemo.Application.csproj",
       "packagesPath": "C:\\Users\\Minh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Application\\obj\\",
+      "outputPath": "C:\\Users\\Minh\\Desktop\\Projcet\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Minh\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -661,8 +661,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Domain\\CleanDemo.Domain.csproj": {
-              "projectPath": "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Domain\\CleanDemo.Domain.csproj"
+            "C:\\Users\\Minh\\Desktop\\Projcet\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Domain\\CleanDemo.Domain.csproj": {
+              "projectPath": "C:\\Users\\Minh\\Desktop\\Projcet\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Domain\\CleanDemo.Domain.csproj"
             }
           }
         }

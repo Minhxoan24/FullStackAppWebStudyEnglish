@@ -4540,11 +4540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.API\\CleanDemo.API.csproj",
+      "projectUniqueName": "C:\\Users\\Minh\\Desktop\\Projcet\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.API\\CleanDemo.API.csproj",
       "projectName": "CleanDemo.API",
-      "projectPath": "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.API\\CleanDemo.API.csproj",
+      "projectPath": "C:\\Users\\Minh\\Desktop\\Projcet\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.API\\CleanDemo.API.csproj",
       "packagesPath": "C:\\Users\\Minh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.API\\obj\\",
+      "outputPath": "C:\\Users\\Minh\\Desktop\\Projcet\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Minh\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -4559,11 +4559,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Application\\CleanDemo.Application.csproj": {
-              "projectPath": "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Application\\CleanDemo.Application.csproj"
+            "C:\\Users\\Minh\\Desktop\\Projcet\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Application\\CleanDemo.Application.csproj": {
+              "projectPath": "C:\\Users\\Minh\\Desktop\\Projcet\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Application\\CleanDemo.Application.csproj"
             },
-            "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Infrastructure\\CleanDemo.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Minh\\Desktop\\Projcet\\Project-E-Leearning\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Infrastructure\\CleanDemo.Infrastructure.csproj"
+            "C:\\Users\\Minh\\Desktop\\Projcet\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Infrastructure\\CleanDemo.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Minh\\Desktop\\Projcet\\FullStackAppWebStudyEnglish\\BackendASP\\CleanDemo.Infrastructure\\CleanDemo.Infrastructure.csproj"
             }
           }
         }
