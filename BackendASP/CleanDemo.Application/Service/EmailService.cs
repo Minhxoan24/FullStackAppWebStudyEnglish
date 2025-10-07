@@ -17,10 +17,12 @@ namespace CleanDemo.Application.Service
         {
             var smtpSettings = _configuration.GetSection("Smtp");
             var host = smtpSettings["Host"];
-            var port = int.Parse(smtpSettings["Port"]);
-            var username = smtpSettings["Username"];
+            var portString = smtpSettings["Port"] ?? throw new InvalidOperationException("SMTP Port not configured");
+            var port = int.Parse(portString);
+            var username = smtpSettings["Username"] ?? throw new InvalidOperationException("SMTP Username not configured");
             var password = smtpSettings["Password"];
-            var enableSsl = bool.Parse(smtpSettings["EnableSsl"]);
+            var enableSslString = smtpSettings["EnableSsl"] ?? "true";
+            var enableSsl = bool.Parse(enableSslString);
 
             using var client = new SmtpClient(host, port)
             {

@@ -11,3 +11,16 @@ C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\Ba
 C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Domain\obj\Debug\net8.0\CleanDemo.Domain.pdb
 C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Domain\obj\Debug\net8.0\ref\CleanDemo.Domain.dll
 C:\Users\Minh\Desktop\Projcet\Project-E-Leearning\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Domain\obj\Debug\net8.0\CleanDemo.Domain.csproj.AssemblyReference.cache
+C:\Users\Minh\Desktop\Projcet\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Domain\bin\Debug\net8.0\CleanDemo.Domain.deps.json
+C:\Users\Minh\Desktop\Projcet\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Domain\bin\Debug\net8.0\CleanDemo.Domain.dll
+C:\Users\Minh\Desktop\Projcet\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Domain\bin\Debug\net8.0\CleanDemo.Domain.pdb
+C:\Users\Minh\Desktop\Projcet\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Domain\obj\Debug\net8.0\CleanDemo.Domain.csproj.AssemblyReference.cache
+C:\Users\Minh\Desktop\Projcet\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Domain\obj\Debug\net8.0\CleanDemo.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Minh\Desktop\Projcet\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Domain\obj\Debug\net8.0\CleanDemo.Domain.AssemblyInfoInputs.cache
+C:\Users\Minh\Desktop\Projcet\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Domain\obj\Debug\net8.0\CleanDemo.Domain.AssemblyInfo.cs
+C:\Users\Minh\Desktop\Projcet\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Domain\obj\Debug\net8.0\CleanDemo.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Minh\Desktop\Projcet\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Domain\obj\Debug\net8.0\CleanDemo.Domain.sourcelink.json
+C:\Users\Minh\Desktop\Projcet\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Domain\obj\Debug\net8.0\CleanDemo.Domain.dll
+C:\Users\Minh\Desktop\Projcet\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Domain\obj\Debug\net8.0\refint\CleanDemo.Domain.dll
+C:\Users\Minh\Desktop\Projcet\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Domain\obj\Debug\net8.0\CleanDemo.Domain.pdb
+C:\Users\Minh\Desktop\Projcet\FullStackAppWebStudyEnglish\BackendASP\CleanDemo.Domain\obj\Debug\net8.0\ref\CleanDemo.Domain.dll

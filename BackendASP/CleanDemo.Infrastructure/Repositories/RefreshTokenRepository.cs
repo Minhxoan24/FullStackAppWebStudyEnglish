@@ -16,7 +16,14 @@ namespace CleanDemo.Infrastructure.Repositories
 
         public async Task<RefreshToken?> GetByTokenAsync(string token)
         {
-            return await _context.RefreshTokens.FirstOrDefaultAsync(rt => rt.Token == token && !rt.IsRevoked);
+            return await _context.RefreshTokens.FirstOrDefaultAsync(rt => rt.Token == token);
+        }
+
+        public async Task<List<RefreshToken>> GetTokensByUserIdAsync(int userId)
+        {
+            return await _context.RefreshTokens
+                .Where(rt => rt.UserId == userId && !rt.IsRevoked)
+                .ToListAsync();
         }
 
         public async Task AddAsync(RefreshToken refreshToken)
@@ -27,6 +34,7 @@ namespace CleanDemo.Infrastructure.Repositories
         public async Task UpdateAsync(RefreshToken refreshToken)
         {
             _context.RefreshTokens.Update(refreshToken);
+            await Task.CompletedTask;
         }
 
         public async Task DeleteAsync(string token)

@@ -23,6 +23,7 @@ namespace CleanDemo.Infrastructure.Data
         public DbSet<Topic> Topics { get; set; }
         public DbSet<ExampleVocabulary> ExampleVocabularies { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
+        public DbSet<PasswordResetToken> PasswordResetTokens { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

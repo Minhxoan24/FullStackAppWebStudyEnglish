@@ -181,6 +181,37 @@ namespace CleanDemo.Infrastructure.Data.Migrations
                     b.ToTable("Lessons", (string)null);
                 });
 
+            modelBuilder.Entity("CleanDemo.Domain.Domain.PasswordResetToken", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ExpiresAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsUsed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Token")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("PasswordResetTokens");
+                });
+
             modelBuilder.Entity("CleanDemo.Domain.Domain.Question", b =>
                 {
                     b.Property<int>("QuestionId")
@@ -360,14 +391,14 @@ namespace CleanDemo.Infrastructure.Data.Migrations
                         new
                         {
                             UserId = 1,
-                            CreatedAt = new DateTime(2025, 9, 29, 17, 56, 55, 63, DateTimeKind.Utc).AddTicks(3522),
+                            CreatedAt = new DateTime(2025, 10, 7, 16, 6, 12, 331, DateTimeKind.Utc).AddTicks(9599),
                             Email = "admin@studyenglish.com",
                             LastName = "System",
                             PasswordHash = "$2a$11$example.hash.for.admin",
                             PhoneNumber = "1234567890",
                             Status = 0,
                             SureName = "Admin",
-                            UpdatedAt = new DateTime(2025, 9, 29, 17, 56, 55, 63, DateTimeKind.Utc).AddTicks(3522)
+                            UpdatedAt = new DateTime(2025, 10, 7, 16, 6, 12, 331, DateTimeKind.Utc).AddTicks(9599)
                         });
                 });
 
@@ -568,6 +599,17 @@ namespace CleanDemo.Infrastructure.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("Course");
+                });
+
+            modelBuilder.Entity("CleanDemo.Domain.Domain.PasswordResetToken", b =>
+                {
+                    b.HasOne("CleanDemo.Domain.Domain.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("CleanDemo.Domain.Domain.Question", b =>

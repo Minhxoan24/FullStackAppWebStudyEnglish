@@ -29,6 +29,7 @@ namespace CleanDemo.API.Controllers.Admin
         public async Task<IActionResult> UpdateUserRole(int id, [FromBody] UpdateUserRoleDto dto)
         {
             // Implement update role logic
+            await Task.CompletedTask;
             return Ok(new { message = "Role updated" });
         }
 
